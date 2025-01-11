@@ -37,7 +37,7 @@ interface Props {
     onUpdateBrand: (brandData: Brand) => void;
 }
 
-const apiKey = process.env.NEXT_PUBLIC_GPT_API_KEY;
+const apiKey = "process.env.NEXT_PUBLIC_GPT_API_KEY";
 
 const AddBrandModal: React.FC<Props> = ({ open, onClose, onAddBrand, selectedBrand, onUpdateBrand, }) => {
     const [brandData, setBrandData] = useState<Brand>(selectedBrand || initialBrandData);
